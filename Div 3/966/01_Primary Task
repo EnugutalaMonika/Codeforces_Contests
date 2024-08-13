@@ -1,1 +1,35 @@
 
+#include<bits/stdc++.h>
+#define int long long
+using namespace std;
+int32_t main(){
+    int t;
+    cin>>t;
+    while(t--){
+        string s;
+        cin>>s;
+        int n=s.size();
+        if(n==3){
+            int k=stoi(s);
+            if(k>=102 && k<=109){
+                cout<<"YES"<<endl;
+            }
+            else{
+               cout<<"NO"<<endl; 
+            }
+        }
+        else if(n==4){
+            int k=stoi(s);
+            if(k>=1010 && k<=1099){
+                cout<<"YES"<<endl;
+            }
+            else{
+               cout<<"NO"<<endl; 
+            }
+        }
+        else{
+               cout<<"NO"<<endl; 
+            }
+    }
+    return 0;
+}
